@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraForge Studios — Premium Ready-to-Launch Business Websites</title>
+  <meta name="description" content="AuraForge Studio builds high-performance, beautiful, and conversion-optimized websites for restaurants, real estate, clinics, and gyms. Launch your startup site in days." />
+
+  <!-- Google Fonts: Syne (Display) + Outfit (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Remix Icons for high-fidelity vector icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Swiper for reviews slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor Glow Backdrop (Micro-interaction) -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============================================
+       HEADER / NAVIGATION
+  ============================================= -->
+  <header class="header" id="header">
+    <nav class="nav container" role="navigation" aria-label="Main Navigation">
+      <a href="#home" class="nav__logo" aria-label="AuraForge Home">
+        <div class="nav__logo-icon" aria-hidden="true">
+          <i class="ri-shape-2-line"></i>
+        </div>
+        <span>Aura<strong>Forge</strong></span>
+      </a>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#features" class="nav__link">Features</a></li>
+        <li><a href="#catalog" class="nav__link">Masterpieces</a></li>
+        <li><a href="#calculator" class="nav__link">Quote Estimator</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#calculator" class="btn btn--outline">Build Plan</a>
+        <a href="#contact" class="btn btn--primary">Launch Now</a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+  <!-- ============================================
+       HERO SECTION
+  ============================================= -->
+  <section class="hero" id="home" aria-label="Hero Introduction">
+    <div class="hero__bg-effects">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+    </div>
+    
+    <div class="container hero__container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          <span>Deploying Digital Excellence</span>
+        </div>
+        <h1 class="hero__title">
+          We Forge <span class="gradient-text">Digital</span><br />
+          <em>Masterpieces</em>
+        </h1>
+        <p class="hero__subtitle">
+          Stunning, ultra-fast, and conversion-optimized websites tailored to your business vertical. Launch your digital presence in days, not months.
+        </p>
+        <div class="hero__actions">
+          <a href="#catalog" class="btn btn--primary btn--lg">
+            Explore Catalog
+            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+          </a>
+          <a href="#calculator" class="btn btn--outline btn--lg">
+            Calculate Quote
+          </a>
+        </div>
+
+        <div class="hero__stats" role="list">
+          <div class="hero__stat" role="listitem">
+            <strong>99+</strong>
+            <span>PageSpeed Score</span>
+          </div>
+          <div class="hero__stat-sep" aria-hidden="true"></div>
+          <div class="hero__stat" role="listitem">
+            <strong>100%</strong>
+            <span>Mobile Responsive</span>
+          </div>
+          <div class="hero__stat-sep" aria-hidden="true"></div>
+          <div class="hero__stat" role="listitem">
+            <strong>24/7</strong>
+            <span>Dedicated Support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visuals: Floating Template Cards -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="floating-cards">
+          
+          <!-- Card 1: SavourPlate -->
+          <div class="float-card float-card--savour">
+            <div class="float-card__header">
+              <span class="float-card__logo">✦ SavourPlate</span>
+              <span class="float-card__badge tag-gold">Restaurant</span>
+            </div>
+            <p class="float-card__desc">Tempting fine dining layouts with integrated booking & menu grids.</p>
+            <div class="float-card__footer">
+              <strong>+45%</strong>
+              <span>Table Bookings</span>
+            </div>
+          </div>
+
+          <!-- Card 2: KeyHaven -->
+          <div class="float-card float-card--key">
+            <div class="float-card__header">
+              <span class="float-card__logo"><i class="ri-home-4-line"></i> KeyHaven</span>
+              <span class="float-card__badge tag-navy">Real Estate</span>
+            </div>
+            <p class="float-card__desc">Sophisticated property grids with live filtering and sorted specifications.</p>
+            <div class="float-card__footer">
+              <strong>4.2k+</strong>
+              <span>Active Listings</span>
+            </div>
+          </div>
+
+          <!-- Card 3: PearlSmile -->
+          <div class="float-card float-card--pearl">
+            <div class="float-card__header">
+              <span class="float-card__logo"><i class="ri-tooth-line"></i> PearlSmile</span>
+              <span class="float-card__badge tag-blue">Medical</span>
+            </div>
+            <p class="float-card__desc">Trustworthy dental portal with before/after comparisons and insurance forms.</p>
+            <div class="float-card__footer">
+              <strong>98%</strong>
+              <span>Patient Rating</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TECH / STACK STRIP
+  ============================================= -->
+  <div class="tech-strip">
+    <div class="container tech-strip__inner">
+      <span class="tech-strip__label">Forged on Modern Standards</span>
+      <div class="tech-strip__logos">
+        <span class="tech-logo"><i class="ri-html5-fill"></i> HTML5</span>
+        <span class="tech-logo"><i class="ri-css3-fill"></i> CSS3 Grid & Flexbox</span>
+        <span class="tech-logo"><i class="ri-javascript-fill"></i> Vanilla JS</span>
+        <span class="tech-logo"><i class="ri-speed-up-line"></i> SEO Optimized</span>
+        <span class="tech-logo"><i class="ri-smartphone-line"></i> Responsive First</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FEATURES SECTION
+  ============================================= -->
+  <section class="features" id="features" aria-labelledby="features-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Why AuraForge</p>
+        <h2 id="features-heading" class="section-title">Engineered for <span class="gradient-text">Growth</span></h2>
+        <p class="section-sub">We don't just build sites. We craft digital tools designed to drive sales, appointments, and listings with zero friction.</p>
+      </div>
+
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="ri-flashlight-line"></i></div>
+          <h3>Blazing Speed</h3>
+          <p>Every line of code is structured for rapid parsing. Near-zero load times ensure search engine visibility and reduce user bounce rates.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="ri-compass-3-line"></i></div>
+          <h3>Intuitive Navigation</h3>
+          <p>Our user-experience patterns are built from extensive testing. Make it easy for your customers to check schedules, search listings, or view menus.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="ri-line-chart-line"></i></div>
+          <h3>Conversion Engineered</h3>
+          <p>Optimized CTA placements, sticky actions, and seamless reservation models turn simple clicks into tangible revenue opportunities.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="ri-shield-user-line"></i></div>
+          <h3>Fully Self-Managed</h3>
+          <p>Clean HTML commenting and a clear customisation guide mean you can update text, images, and prices yourself without complex coding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SHOWCASE CATALOG (OUR MASTERPIECES)
+  ============================================= -->
+  <section class="catalog" id="catalog" aria-labelledby="catalog-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Our Masterpieces</p>
+        <h2 id="catalog-heading" class="section-title">Industry-Specific <span class="gradient-text">Blueprints</span></h2>
+        <p class="section-sub">Explore our curated collection of production-ready designs. Fully customisable, lightning-fast, and built to scale.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="catalog__filters" role="tablist" aria-label="Template categories">
+        <button class="catalog__filter active" data-filter="all" role="tab" aria-selected="true">All Themes</button>
+        <button class="catalog__filter" data-filter="restaurant" role="tab" aria-selected="false">Restaurant</button>
+        <button class="catalog__filter" data-filter="real-estate" role="tab" aria-selected="false">Real Estate</button>
+        <button class="catalog__filter" data-filter="medical" role="tab" aria-selected="false">Medical / Health</button>
+        <button class="catalog__filter" data-filter="fitness" role="tab" aria-selected="false">Fitness / Gym</button>
+      </div>
+
+      <!-- Catalog Grid -->
+      <div class="catalog__grid" id="catalogGrid">
+
+        <!-- Blueprint 1: SavourPlate -->
+        <article class="blueprint-card" data-category="restaurant">
+          <div class="blueprint-card__img-wrap">
+            <img src="images/savourplate_showcase.jpg" alt="SavourPlate Showcase Preview" loading="lazy" />
+            <div class="blueprint-card__overlay">
+              <a href="https://savourplate.onrender.com" target="_blank" class="btn btn--primary btn--sm">Live Preview <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+          <div class="blueprint-card__body">
+            <div class="blueprint-card__meta">
+              <span class="blueprint-card__title">SavourPlate</span>
+              <span class="blueprint-card__category badge-gold">Fine Dining</span>
+            </div>
+            <p class="blueprint-card__desc">An exquisite template for restaurants. Offers custom menus, filterable courses, event details, and reservation booking flows.</p>
+            <div class="blueprint-card__specs">
+              <span><i class="ri-checkbox-circle-line"></i> Menu Filter</span>
+              <span><i class="ri-calendar-event-line"></i> Tables Booking</span>
+              <span><i class="ri-star-line"></i> Testimonials</span>
+            </div>
+            <a href="https://savourplate.onrender.com" target="_blank" class="blueprint-card__link">Inspect Blueprint <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
+
+        <!-- Blueprint 2: KeyHaven -->
+        <article class="blueprint-card" data-category="real-estate">
+          <div class="blueprint-card__img-wrap">
+            <img src="images/keyhaven_showcase.jpg" alt="KeyHaven Showcase Preview" loading="lazy" />
+            <div class="blueprint-card__overlay">
+              <a href="https://keyhaven-j1xl.onrender.com" target="_blank" class="btn btn--primary btn--sm">Live Preview <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+          <div class="blueprint-card__body">
+            <div class="blueprint-card__meta">
+              <span class="blueprint-card__title">KeyHaven</span>
+              <span class="blueprint-card__category badge-navy">Real Estate</span>
+            </div>
+            <p class="blueprint-card__desc">A clean, sophisticated design for real estate brokerages. Features listings grid filter, agent grids, and property upload requests.</p>
+            <div class="blueprint-card__specs">
+              <span><i class="ri-filter-2-line"></i> Advanced Search</span>
+              <span><i class="ri-user-star-line"></i> Agent Profiles</span>
+              <span><i class="ri-slideshow-line"></i> Featured Swiper</span>
+            </div>
+            <a href="https://keyhaven-j1xl.onrender.com" target="_blank" class="blueprint-card__link">Inspect Blueprint <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
+
+        <!-- Blueprint 3: PearlSmile -->
+        <article class="blueprint-card" data-category="medical">
+          <div class="blueprint-card__img-wrap">
+            <img src="images/pearlsmile_showcase.jpg" alt="PearlSmile Showcase Preview" loading="lazy" />
+            <div class="blueprint-card__overlay">
+              <a href="https://pearlsmile-cof9.onrender.com" target="_blank" class="btn btn--primary btn--sm">Live Preview <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+          <div class="blueprint-card__body">
+            <div class="blueprint-card__meta">
+              <span class="blueprint-card__title">PearlSmile</span>
+              <span class="blueprint-card__category badge-blue">Dental Clinic</span>
+            </div>
+            <p class="blueprint-card__desc">A trust-enhancing, clinical theme for dentists and clinics. Features before/after comparison layout, appointment booking, and services.</p>
+            <div class="blueprint-card__specs">
+              <span><i class="ri-history-line"></i> Before & After Compare</span>
+              <span><i class="ri-time-line"></i> Clinic Schedule</span>
+              <span><i class="ri-shield-cross-line"></i> Insurance Option</span>
+            </div>
+            <a href="https://pearlsmile-cof9.onrender.com" target="_blank" class="blueprint-card__link">Inspect Blueprint <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
+
+        <!-- Blueprint 4: IronForge -->
+        <article class="blueprint-card" data-category="fitness">
+          <div class="blueprint-card__img-wrap">
+            <img src="images/ironforge_showcase.jpg" alt="IronForge Showcase Preview" loading="lazy" />
+            <div class="blueprint-card__overlay">
+              <a href="https://ironforge-twj0.onrender.com" target="_blank" class="btn btn--primary btn--sm">Live Preview <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+          <div class="blueprint-card__body">
+            <div class="blueprint-card__meta">
+              <span class="blueprint-card__title">IronForge</span>
+              <span class="blueprint-card__category badge-fire">Elite Gym</span>
+            </div>
+            <p class="blueprint-card__desc">A high-energy, dark-themed layout for gyms and coaches. Includes a day-filtered class scheduler, trainers list, and BMI calculator.</p>
+            <div class="blueprint-card__specs">
+              <span><i class="ri-calendar-todo-line"></i> Classes Scheduler</span>
+              <span><i class="ri-calculator-line"></i> BMI Calculator</span>
+              <span><i class="ri-vip-crown-line"></i> Price Switcher</span>
+            </div>
+            <a href="https://ironforge-twj0.onrender.com" target="_blank" class="blueprint-card__link">Inspect Blueprint <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       INTERACTIVE CUSTOMIZE / PRICING CALCULATOR
+  ============================================= -->
+  <section class="calculator" id="calculator" aria-labelledby="calculator-heading">
+    <div class="container">
+      <div class="calculator__grid">
+        
+        <div class="calculator__info">
+          <p class="eyebrow eyebrow--light">Interactive Builder</p>
+          <h2 id="calculator-heading" class="section-title section-title--light">Configure Your <span class="gradient-text">Blueprint</span></h2>
+          <p class="calculator__desc">Customize your package by selecting core components and custom integrations. See your estimated price calculate in real-time.</p>
+          
+          <div class="calculator__trustpoints">
+            <div class="trustpoint">
+              <i class="ri-checkbox-circle-fill"></i>
+              <span>Source files delivered directly to you</span>
+            </div>
+            <div class="trustpoint">
+              <i class="ri-checkbox-circle-fill"></i>
+              <span>No lock-in monthly software fees</span>
+            </div>
+            <div class="trustpoint">
+              <i class="ri-checkbox-circle-fill"></i>
+              <span>30 Days post-launch coding support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__box">
+          <h3 class="calculator__box-title">Build Your Quote</h3>
+          
+          <!-- Step 1: Choose Template -->
+          <div class="calc-group">
+            <label class="calc-label">1. Select Core Template</label>
+            <div class="template-selector">
+              <label class="template-opt">
+                <input type="radio" name="baseTemplate" value="999" data-name="SavourPlate (Restaurant)" checked />
+                <span class="template-opt__btn">
+                  <strong>SavourPlate</strong>
+                  <span>Fine Dining · $999</span>
+                </span>
+              </label>
+              <label class="template-opt">
+                <input type="radio" name="baseTemplate" value="1199" data-name="KeyHaven (Real Estate)" />
+                <span class="template-opt__btn">
+                  <strong>KeyHaven</strong>
+                  <span>Real Estate · $1,199</span>
+                </span>
+              </label>
+              <label class="template-opt">
+                <input type="radio" name="baseTemplate" value="999" data-name="PearlSmile (Dental)" />
+                <span class="template-opt__btn">
+                  <strong>PearlSmile</strong>
+                  <span>Clinical · $999</span>
+                </span>
+              </label>
+              <label class="template-opt">
+                <input type="radio" name="baseTemplate" value="899" data-name="IronForge (Gym)" />
+                <span class="template-opt__btn">
+                  <strong>IronForge</strong>
+                  <span>Fitness · $899</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Integrations (Checkboxes) -->
+          <div class="calc-group">
+            <label class="calc-label">2. Add Integrations</label>
+            <div class="options-list">
+              <label class="option-item">
+                <input type="checkbox" class="addon-check" value="500" data-name="E-Commerce Setup" />
+                <span class="option-item__btn">
+                  <span class="option-item__box"><i class="ri-check-line"></i></span>
+                  <span class="option-item__text">
+                    <strong>E-Commerce Suite</strong>
+                    <span>Product catalog + cart flow (+$500)</span>
+                  </span>
+                </span>
+              </label>
+
+              <label class="option-item">
+                <input type="checkbox" class="addon-check" value="350" data-name="Custom Booking System" />
+                <span class="option-item__btn">
+                  <span class="option-item__box"><i class="ri-check-line"></i></span>
+                  <span class="option-item__text">
+                    <strong>Custom Booking System</strong>
+                    <span>Interactive appointments & schedules (+$350)</span>
+                  </span>
+                </span>
+              </label>
+
+              <label class="option-item">
+                <input type="checkbox" class="addon-check" value="250" data-name="SEO Suite" />
+                <span class="option-item__btn">
+                  <span class="option-item__box"><i class="ri-check-line"></i></span>
+                  <span class="option-item__text">
+                    <strong>Advanced SEO Suite</strong>
+                    <span>Dynamic meta, keyword research, schema markup (+$250)</span>
+                  </span>
+                </span>
+              </label>
+
+              <label class="option-item">
+                <input type="checkbox" class="addon-check" value="300" data-name="Brand Copywriting" />
+                <span class="option-item__btn">
+                  <span class="option-item__box"><i class="ri-check-line"></i></span>
+                  <span class="option-item__text">
+                    <strong>Brand Assets & Copywriting</strong>
+                    <span>Custom logo designs & professional copy (+$300)</span>
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Billing / Support Cycle -->
+          <div class="calc-group">
+            <label class="calc-label">3. Launch Support Plan</label>
+            <div class="billing-toggle">
+              <button class="bill-btn active" data-billing="monthly" data-price="49">Monthly ($49)</button>
+              <button class="bill-btn" data-billing="annual" data-price="39">
+                Annual ($39/mo)
+                <span class="bill-badge">Save 20%</span>
+              </button>
+            </div>
+            <p class="billing-desc">Includes domain registration, CDN caching, weekly backups, and minor content updates.</p>
+          </div>
+
+          <!-- Total Calculation Display -->
+          <div class="calculator__result">
+            <div class="price-row">
+              <span>One-time Setup:</span>
+              <strong id="oneTimeCost">$999</strong>
+            </div>
+            <div class="price-row">
+              <span>Monthly Support:</span>
+              <strong id="monthlyCost">$49/mo</strong>
+            </div>
+            <a href="#contact" class="btn btn--primary btn--full calc-cta">Get Started with this Plan</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ SECTION
+  ============================================= -->
+  <section class="faq" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Got Questions?</p>
+        <h2 id="faq-heading" class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="section-sub">Everything you need to know about purchasing, launching, and managing your new business blueprint.</p>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq-item" tabindex="0">
+          <div class="faq-item__header">
+            <h3>What do I actually receive when I buy a blueprint?</h3>
+            <span class="faq-item__icon"><i class="ri-add-line"></i></span>
+          </div>
+          <div class="faq-item__body">
+            <p>You receive the complete production files (index.html, style.css, script.js), custom documentation guide, and any styling assets. If you choose our Support Plan, we configure your domain, setup caching, hook up Formspree, and launch it live for you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" tabindex="0">
+          <div class="faq-item__header">
+            <h3>Do I need complex software or hosting to run these websites?</h3>
+            <span class="faq-item__icon"><i class="ri-add-line"></i></span>
+          </div>
+          <div class="faq-item__body">
+            <p>Not at all! Because they are coded in standard HTML/CSS/JS without heavy database backends, they can be hosted for free or next-to-nothing on platforms like Netlify, Vercel, or GitHub Pages. No complex WordPress installations or updates required.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" tabindex="0">
+          <div class="faq-item__header">
+            <h3>Can I change the colors, images, and texts myself?</h3>
+            <span class="faq-item__icon"><i class="ri-add-line"></i></span>
+          </div>
+          <div class="faq-item__body">
+            <p>Yes, absolutely. The code is carefully commented and comes with a 10-page Customisation Guide. Any plain text editor can edit the index.html. We design the layouts specifically so you can change content yourself without paying developer hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" tabindex="0">
+          <div class="faq-item__header">
+            <h3>How do the contact and booking forms send emails?</h3>
+            <span class="faq-item__icon"><i class="ri-add-line"></i></span>
+          </div>
+          <div class="faq-item__body">
+            <p>By default, forms handle validation client-side and show a success screen. To send real emails, we connect the form endpoint to Formspree, a reliable and free-tier service that forwards submissions instantly to your email inbox.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT / DISCOVERY FORM
+  ============================================= -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact__grid">
+        
+        <div class="contact__info">
+          <p class="eyebrow eyebrow--light">Launch Today</p>
+          <h2 id="contact-heading" class="section-title section-title--light">Ready to Forge Your <span class="gradient-text">Presence?</span></h2>
+          <p class="contact__desc">Fill out our launch pad briefing form. Select your core layout and integrations, and one of our designers will reach out within 2 hours to confirm your plan.</p>
+          
+          <div class="contact__methods">
+            <div class="contact__method">
+              <i class="ri-mail-line"></i>
+              <div>
+                <strong>Email Us</strong>
+                <span><a href="mailto:adityasinghal2201@gmail.com">adityasinghal2201@gmail.com</a></span>
+              </div>
+            </div>
+            <div class="contact__method">
+              <i class="ri-chat-smile-2-line"></i>
+              <div>
+                <strong>Average Response</strong>
+                <span>Under 2 Hours (Mon-Sat)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap">
+          <form class="contact__form" id="launchForm" action="https://formspree.io/f/mwvdqvrl" method="POST" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clientName">Your Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="clientName" name="name" placeholder="John Doe" required autocomplete="name" />
+                <span class="form-error" id="clientNameErr" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="clientEmail">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="clientEmail" name="email" placeholder="john@company.com" required autocomplete="email" />
+                <span class="form-error" id="clientEmailErr" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="companyName">Business Name</label>
+                <input type="text" id="companyName" name="company" placeholder="e.g. Acme Corp" />
+              </div>
+              <div class="form-group">
+                <label for="selectedBlueprint">Selected Blueprint <span class="required" aria-hidden="true">*</span></label>
+                <select id="selectedBlueprint" name="blueprint" required>
+                  <option value="" disabled selected>Select core layout</option>
+                  <option value="savourplate">SavourPlate (Fine Dining)</option>
+                  <option value="keyhaven">KeyHaven (Real Estate)</option>
+                  <option value="pearlsmile">PearlSmile (Dental Clinic)</option>
+                  <option value="ironforge">IronForge (Gym/Fitness)</option>
+                  <option value="custom">Bespoke Blueprint (Custom Development)</option>
+                </select>
+                <span class="form-error" id="blueprintErr" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="planDetails">Configured Package Summary (Optional)</label>
+              <textarea id="planDetails" name="package" rows="2" placeholder="Copy/paste details from pricing builder or write comments here…"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="clientMsg">Project Briefing / Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="clientMsg" name="message" rows="3" placeholder="Tell us about your brand, deadline, or required custom features…" required></textarea>
+              <span class="form-error" id="messageErr" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitLaunchBtn">
+              <span class="btn-text">Transmit Request</span>
+              <i class="ri-rocket-2-line" aria-hidden="true"></i>
+            </button>
+          </form>
+
+          <div class="form-success" id="launchFormSuccess" hidden aria-live="polite">
+            <div class="form-success__icon"><i class="ri-checkbox-circle-fill"></i></div>
+            <h3>Request Transmitted!</h3>
+            <p>We've received your package blueprint configuration. A senior project manager will reach out via email within 2 business hours.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        
+        <div class="footer__col footer__col--brand">
+          <a href="#home" class="footer__logo">
+            <div class="footer__logo-icon"><i class="ri-shape-2-line"></i></div>
+            <span>Aura<strong>Forge</strong></span>
+          </a>
+          <p>Designing digital blueprints that elevate operational efficiency. Launched in 2026, AuraForge empowers small-to-medium businesses with world-class templates.</p>
+          <div class="footer__social">
+            <a href="https://github.com/Adii2201" target="_blank" rel="noopener noreferrer" aria-label="Aditya GitHub"><i class="ri-github-line"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-singhal-ba71b3280" target="_blank" rel="noopener noreferrer" aria-label="Aditya LinkedIn"><i class="ri-linkedin-line"></i></a>
+            <a href="https://www.instagram.com/aditya_official_2585/" target="_blank" rel="noopener noreferrer" aria-label="Aditya Instagram"><i class="ri-instagram-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Blueprints</h4>
+          <ul class="footer__links">
+            <li><a href="https://savourplate.onrender.com" target="_blank">SavourPlate</a></li>
+            <li><a href="https://keyhaven-j1xl.onrender.com" target="_blank">KeyHaven</a></li>
+            <li><a href="https://pearlsmile-cof9.onrender.com" target="_blank">PearlSmile</a></li>
+            <li><a href="https://ironforge-twj0.onrender.com" target="_blank">IronForge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Support</h4>
+          <ul class="footer__links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#calculator">Pricing Builder</a></li>
+            <li><a href="#faq">Frequently Asked</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact Studio</h4>
+          <address class="footer__address">
+            <p><i class="ri-map-pin-line"></i> India</p>
+            <p><i class="ri-phone-line"></i> <a href="tel:+918218421173">+91 8218421173</a></p>
+            <p><i class="ri-mail-line"></i> <a href="mailto:adityasinghal2201@gmail.com">adityasinghal2201@gmail.com</a></p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footerYear"></span> AuraForge Studios. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">System Status</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS for reviews slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
